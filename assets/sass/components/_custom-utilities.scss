@@ -4,6 +4,9 @@
 .main{
 	overflow: hidden;
 }
+.clearfix {
+  @include clearfix;
+}
 .text-gray{
 	color: var(--bs-gray) !important;
 }
