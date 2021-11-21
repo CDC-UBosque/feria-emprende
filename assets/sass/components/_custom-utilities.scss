@@ -1,0 +1,228 @@
+// -----------------------------------------------------------------------------
+// This file contains custom scss utilities.
+// -----------------------------------------------------------------------------
+.main{
+	overflow: hidden;
+}
+.text-gray{
+	color: var(--bs-gray) !important;
+}
+.text-secondary{
+	color: var(--bs-secondary) !important;
+}
+.bg-secondary{
+	background: var(--bs-secondary) !important;;
+}
+.bg-primary-gradient{
+	position: relative;
+	&::before{
+		content: '';
+		position: absolute;
+		width: 100%;
+		height: 100%;
+		background: rgb(132,214,47);
+		background: radial-gradient(circle, rgba(132,214,47,1) 0%, rgba(95,186,1,1) 100%) !important;
+		@media (max-width: $break-sm) {
+			background: var(--bs-primary-light) !important;
+		}
+	}
+}
+.categorias{
+	.pb-6{
+		padding-bottom: 0rem;
+		@media (max-width: $break-md) {
+			padding-top: 0;
+			padding-bottom: 15px;
+		}
+	}
+	.bg-primary-gradient{
+		&::before{
+			height: 90%;
+		}
+	}
+}
+.pb-6{
+	 padding-bottom: 5rem;
+	 @media (max-width: $break-md) {
+		padding-bottom: 15px;
+		padding-top: 0px;
+	}
+}
+.btn-secondary-border{
+	background: var(--bs-secondary);
+	padding-left:3rem;
+	padding-right:3rem;
+	padding-top:0.5rem;
+	color: white;
+	border-radius: 17px;
+	position: relative;
+	font-size: $size-24;
+	font-weight: 600;
+	transition: all 0.25s ease-out;
+	@media (max-width: $break-md) {
+		font-size: $size-20;
+	}
+	&:hover{
+		color:var(--bs-white);
+		background: var(--bs-secondary);
+		text-decoration: none;
+		position: relative;
+  		top: 2px;
+  		box-shadow: -6px 14px 12px 2px rgba(0, 0, 0, .4);
+	}
+	&::before{
+		content: '';
+		width: 100%;
+		height: 100%;
+		border:2px solid var(--bs-dark);
+		position: absolute; 
+		top:3px;
+		left: 5px;
+		border-radius: 17px;
+	}
+	 &::after{
+	 	content: '';
+	 	width: 20px;
+	 	height: 20px;
+	 	background: var(--bs-red);
+	 	border-radius: 20px;
+	 	position: absolute;
+	 	right: 10px;
+	 	top: 15px;
+
+	 }
+}
+.vw-50 {
+    width: 50vw;
+    @media (max-width: $break-md) {
+			width: 100vw;
+		}
+}
+.btn-card-border{
+	background: var(--bs-secondary);
+	padding-left:2.3rem;
+	padding-right:2.3rem;
+	padding-top:1rem;
+	color: var(--bs-white);;
+	border-radius: 17px;
+	position: relative;
+	font-size: $size-16;
+	font-weight: 500;
+	text-transform: uppercase;
+	margin-top: -1rem;
+	transition: all 0.25s ease-out;
+	&:hover{
+		color: var(--bs-white);
+		text-decoration: none;
+		position: relative;
+  		top: 2px;
+  		box-shadow: -6px 14px 12px 2px rgba(0, 0, 0, .12);
+	}
+	&::before{
+		content: '';
+		width: 100%;
+		height: 100%;
+		border:2px solid var(--bs-dark);
+		position: absolute; 
+		top:3px;
+		left: 5px;
+		border-radius: 17px;
+	}
+}
+.btn-banner-border{
+	background: var(--bs-white);
+	padding-left:3rem;
+	padding-right:3rem;
+	padding-top:0.5rem;
+	color: var(--bs-secondary);
+	border-radius: 17px;
+	position: relative;
+	font-size: $size-24;
+	font-weight: 600;
+	transition: all 0.25s ease-out;
+	@media (max-width: $break-md) {
+		font-size: $size-20;
+	}
+	&:hover{
+		color: var(--bs-secondary);
+		text-decoration: none;
+		position: relative;
+  		top: 2px;
+  		box-shadow: -6px 14px 12px 2px rgba(0, 0, 0, .3);
+	}
+	&::before{
+		content: '';
+		width: 100%;
+		height: 100%;
+		border:2px solid var(--bs-dark);
+		position: absolute; 
+		top:3px;
+		left: 5px;
+		border-radius: 17px;
+	}
+}
+.btn-whatsapp-emprende{
+	background: var(--bs-white);
+	padding-left:3rem;
+	padding-right:3rem;
+	padding-top:0.5rem;
+	color: var(--bs-secondary);
+	border-radius: 17px;
+	position: relative;
+	font-size: $size-24;
+	font-weight: 600;
+	border:2px solid var(--bs-primary);
+	transition: all 0.25s ease-out;
+	@media (max-width: $break-md) {
+		font-size: $size-20;
+	}
+	&:hover{
+		color: var(--bs-secondary);
+		text-decoration: none;
+		position: relative;
+  		top: -2px;
+  		box-shadow: -6px 14px 12px 2px rgba(0, 0, 0, .12);
+	}
+	&::after{
+		content: url(/assets/images/icon_whatsapp.svg);
+		position: absolute;
+		bottom:6px;
+		left: 10%;
+	}
+
+}
+.dropdown-border{
+	background: transparent !important;
+	border:2px solid rgba(255,255,255,0.5);
+	padding:0.5rem 2rem;
+	text-transform: uppercase;
+	border-radius: 17px;
+	@media (max-width: $break-sm) {
+		border:2px solid var(--bs-primary);
+	}
+	a{
+		color: white;
+		font-size: $size-15;
+		@media (max-width: $break-sm) {
+			color: var(--bs-primary);
+		}
+	}
+	.dropdown-menu{
+		width: 100%;
+		li{
+			border-bottom: 1px solid rgba(0, 0, 0, .2);
+			a{
+				color: var(--bs-gray);
+
+				&:hover{
+					color: var(--bs-secondary);
+					background: white;
+					text-decoration: none;
+				}
+			}
+			&:last-child{
+				border-bottom: 0;
+			}
+		}
+	}
+}

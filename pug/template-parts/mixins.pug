@@ -1,0 +1,22 @@
+//- simple-card
+mixin simple-card(urlimg, title, resumen, name, phone, web, urlweb, email, mailto, urlbtn)
+	.col-sm-6.col-lg-4.mb-4
+		.card
+			.card-img
+				img(src=urlimg class="img-fluid")
+			.card-body
+				.card-title
+					= title
+				.card-resumen.mb-3
+					= resumen
+				.card-name.mb-2
+					= name 
+				.card-phone.mb-1
+					= phone
+				.card-web.mb-1
+					a( href=urlweb target="_blank")
+						= web
+				.card-email.mb-0
+					a( href=mailto)
+						= email
+				a(class="btn btn-whatsapp-emprende mb-4 mt-4" href=urlbtn target="_blank") Conecta

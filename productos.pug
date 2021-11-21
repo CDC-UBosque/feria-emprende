@@ -1,0 +1,184 @@
+//- .component-name
+//- .component-name--variant
+//- .component-name__sub-object
+//- .component-name__sub-object--variant 
+
+extends pug/page-templates/tpl_archive.pug
+
+block title
+	title Productos - Feria El Bosque Emprende
+
+block banner
+	section.hero.bg-banner-productos.pb-5
+			.container-lg
+				.row.pb-5.pt-5.justify-content-center.position-relative.body-hero
+					.col.pt-5.text-center
+						h1.fs-1.text-white Productos
+block contenido
+	.container-lg.bg-light.grid-productos.pb-5
+		.row.mb-5
+			.col.mt-5.text-center.mb-2
+				.emprende-title.mt-2.mb-2.mb-md-1
+					|Descubre los proyectos emprendedores de <span>productos</span>
+				.emprende-lead
+					|Únete al networking  y encuentra proveedores y colaboradores
+		.row(data-masonry='{"percentPosition": true }')
+			+simple-card('/assets/images/440x230/img_elemento.png', 'Elemento', 'Elemento nace a partir de la necesidad de crear un proyecto propio que genere ingresos y a la vez participe en un mercado amplio de diseño de textiles y prendas de vestir para personal de la salud.', 'Oscar Moreno', '300 2202690', 'linktr.ee/elementomg', 'http://linktr.ee/elementomg', 'elementomg.info@gmail.com', 'mailto:elementomg.info@gmail.com', 'https://wa.me/573002202690')
+
+			+simple-card('/assets/images/440x230/img_Vinicia.png', 'Vinicia', 'Vinicia es una cervecería independiente que le apuesta al desarrollo sostenible a Trávez de la economía circular.', 'David Felipe Garcia Olaya', '3115605750', 'instagram.com/vinicia.cerveceria', 'https://www.instagram.com/vinicia.cerveceria/', 'magmacol21@gmail.com', 'mailto:magmacol21@gmail.com', 'https://wa.me/573115605750')
+
+			+simple-card('/assets/images/440x230/img_Magma.png', 'Magma', 'Magma es el primer calzado circular realizado con los residuos de la elaboración de cerveza provenientes de VINICIA, proporcionando un ejemplo real de una simbiosis industrial. ', 'David Felipe Garcia Olaya', '3115605750', 'instagram.com/magmacol', 'hhttps://www.instagram.com/magmacol_/', 'magmacol21@gmail.com', 'mailto:magmacol21@gmail.com', 'https://wa.me/573115605750')
+
+			+simple-card('/assets/images/440x230/img_Its_Green.png', 'It´s green', 'Tienda virtual de productos sostenibles. La esencia de la tienda se basa en generar conciencia de consumo responsable y de incluir en nuestras compras diarias este tipo de productos elaborados mediante procesos artesanales, materias primas naturales o con menor impacto ambiental. ', 'Sebastian David Hernandez', '3163382470', 'itsgreencol.com/', 'http://itsgreencol.com/', 'David.sebas06@gmail.com', 'mailto:David.sebas06@gmail.com', 'https://wa.me/573163382470')
+
+			+simple-card('/assets/images/440x230/img_Brida_Rose.png', 'BRIDA ROSE', 'Es un emprendimiento de detalles y sorpresas, dónde vendemos rosas inmortalizadas en diferentes presentaciones. ', 'Lina María Colmenares', '3508891984', 'instagram.com/brida.rose', 'https://www.instagram.com/brida.rose', 'Lcolmenaresv@unbosque.edu.co', 'mailto:Lcolmenaresv@unbosque.edu.co', 'https://wa.me/573508891984')
+
+			+simple-card('/assets/images/440x230/img_Arte_vito.png', 'Arte Vito ', 'Taller de manualidades: muñecas personalizadas y proyectos Country de temporada.', 'Yicela Novoa Rodriguez', '3174353578', 'www.instagram.com/arte.vito', 'https://www.instagram.com/arte.vito', 'yicela.novoar@gmail.com', 'mailto:yicela.novoar@gmail.com', 'https://wa.me/573174353578')
+
+
+			+simple-card('/assets/images/440x230/img_Inochi.png', 'INOCHI Colombia ', 'Venta de productos ecológicos.', 'Ana Maria Romero', '3208432034', 'inochicolombia', 'https://linktr.ee/inochicolombia', 'Anamromeroj@gmail.com', 'mailto:Anamromeroj@gmail.com', 'https://wa.me/573208432034')
+
+			+simple-card('/assets/images/440x230/img_Bonne_Sante.png', 'Bonne sante', 'Empresa comercializadora de dispositivos medicos', 'Ivonne Andrea Gallo', '3134985698', '', '', 'ggeneral.bsgs@gmail.com', 'mailto:ggeneral.bsgs@gmail.com', 'https://wa.me/573134985698')
+
+			+simple-card('/assets/images/440x230/img_Petty_crafty_handmade.png', 'Patty´s Crafty Handmade', 'Artículos artesanales hechos a mano.', 'Patricia Anaya Gómez', '3006412237', 'instagram.com/pattyscraftyhandmade', 'https://instagram.com/pattyscraftyhandmade?utm_medium=copy_link', 'pattyag82@hotmail.com', 'mailto:pattyag82@hotmail.com', 'https://wa.me/573006412237')
+
+			+simple-card('/assets/images/440x230/img_the_cosmic_trip.png', 'The cosmic trip', 'Tejidos y bisutería funky y groovy 100 % a mano.', 'Carolina Avellaneda', '3006605197', 'Ig: @the_cosmic_trip_co', '', 'Cololina_96@hotmail.com', 'mailto:Cololina_96@hotmail.com', 'https://wa.me/573006605197')
+
+			+simple-card('/assets/images/440x230/img_Biojamp.png', 'BIOJAMP', 'Desarrollos sostenibles en el área de la agricultura urbana ', 'Jael Pamela Moreno ', '3166821945', ' instagram.com/biojamp_ds', 'https://www.instagram.com/biojamp_ds', 'Ipadjpmo@gmail.com ', 'mailto:Ipadjpmo@gmail.com ', 'https://wa.me/573166821945')
+
+			+simple-card('/assets/images/440x230/img_Peludos.png', 'Peludos', 'Fábrica de ropa y accesorios para mascotas.', 'Tatiana Diaz', '3228007534', ' instagram.com/latiendadepeludos', 'https://www.instagram.com/latiendadepeludos', 'latiendadepeludos@gmail.com', 'mailto:latiendadepeludos@gmail.com', 'https://wa.me/573228007534')
+
+			+simple-card('/assets/images/440x230/img_Cosita_para_ti.png', 'Cositas para ti ', 'Tienda virtual de regalos.', 'Camila Galindo', '3106255575', ' instagram.com/cositas.paraty', 'https://www.instagram.com/cositas.paraty', 'kmigalindo@gmail.com', 'mailto:kmigalindo@gmail.com', 'https://wa.me/573106255575')
+
+			+simple-card('/assets/images/440x230/img_Taius.png', 'Taius By Maria Juliana  ', 'TAIUS es una empresa Colombiana de cosméticos especializados en el cuidado capilar, basada en formulaciones con estudios de efectividad y enfocada en el mercado sostenible .', 'Kevin David Martínez', '3204366470', ' instagram.com/taiuscolombia', 'https://www.instagram.com/taiuscolombia', 'admontaius@gmail.com', 'mailto:admontaius@gmail.com', 'https://wa.me/573204366470')
+
+			+simple-card('/assets/images/440x230/img_Rie.png', 'Ríe Infancia ', 'Iniciativa por la primera infancia,  que a través de servicios y productos busca fortalecer una cultura de la infancia. ', 'Natalia Bruges', '3132039772', ' rieinfancia.com', 'http://www.rieinfancia.com/', 'nataliabruges@gmail.com', 'mailto:nataliabruges@gmail.com', 'https://wa.me/573132039772')
+
+			+simple-card('/assets/images/440x230/img_Chic.png', 'Chic Joyas y Accesorios', 'Joyas elaboradas a Mano en bronce, acero , oro golfi y piedras naturales. ', 'Anna Lopez Mora', '3138717048', ' instagram.com/chicjoyasaccesorios', 'https://www.instagram.com/chicjoyasaccesorios', 'annalmfe20@gmail.com', 'mailto:annalmfe20@gmail.com', 'https://wa.me/573138717048')
+
+			+simple-card('/assets/images/440x230/no-disponible.png', 'Ary4Naugthy', 'Mi emprendimiento se basa en los productos cosméticos para mujeres y hombres que aman cuidar su piel entre otros productos como maquillaje, perfumeria, cuidado personal, accesorios, entre otros de diferentes marcas reconocidas y certificadas. ', 'Heiryn Dayanne Hernández ', '3133102502', 'facebook.com/Ary4Naugthy', 'https://www.facebook.com/profile.php?id=100005470485266', 'dayanne.9702@gmail.com', 'mailto:dayanne.9702@gmail.com', 'https://wa.me/573133102502')
+
+			+simple-card('/assets/images/440x230/img_Monarka.png', 'MonarkaCo Moda Transformada y Sostenible', 'Prendas únicas fabricadas a partir de plástico reciclado y algodón recuperado. ', 'María Angélica Fernández', '3502980401', 'instagram.com//monarkaco', 'https://www.instagram.com/monarkaco', 'fernandez.mariaangelica@gmail.com', 'mailto:fernandez.mariaangelica@gmail.com', 'https://wa.me/573502980401')
+
+			+simple-card('/assets/images/440x230/img_Give_it_use.png', 'Give It Use', 'Give It Use nace como una marca de moda sostenible, dedicada a la fabricación  de artículos de moda viajera inspirada en los paisajes y animales más representativos de Colombia. *Todos nuestros artículos son fabricados a partir de telas compuestas por 50% Plástico Reciclado de Botellas PET y Algodón Orgánico.', 'Juan Sebastian Devia ', '3108738417', 'instagram.com/give.it.use', 'https://www.instagram.com/give.it.use', 'sebastiandeviadaza@gmail.com', 'mailto:sebastiandeviadaza@gmail.com', 'https://wa.me/573108738417')
+
+			+simple-card('/assets/images/440x230/img_cositas_deliciosas.png', 'Cositas deliciosas', 'Productos de belleza', 'Natalia Moreno', '3102894603', 'instagram.com/cositasdeliciosas.sabana', 'https://www.instagram.com/cositasdeliciosas.sabana', 'Nmorenogu@gmail.com', 'mailto:Nmorenogu@gmail.com', 'https://wa.me/573102894603')
+
+			+simple-card('/assets/images/440x230/img_Suenos_en_pijama.png', 'Sueños en Pijama', 'Pijamas para hombre y para mujer ', 'Natalia Quiroga', '3172327405', '', '', 'nquiroga@unbosque.edu.co', 'mailto:nquiroga@unbosque.edu.co', 'https://wa.me/573172327405')
+
+			+simple-card('/assets/images/440x230/img_Ivanna_Wear.png', 'Ivanna Wear', 'Nuestro emprendimiento esta enfocado en el diseño de productos testiles. manejamos dos lineas, la primera esta enfocada en el sector de la moda (chaquetas, abrigos, tapabocas, carpas, entre otros) y la segunda esta enfocada en la creacion de productos para el confort de mascotas (gatos y perros) en esta linea tenemos tepeen, camas, gimnacios, mobiliario. ', 'Santiago Alejandro Rodriguez', '3112912740', 'ivannawear.expone.co/', 'https://ivannawear.expone.co/', 'sarodriguezm@unbosque.edu.co', 'mailto:sarodriguezm@unbosque.edu.co', 'https://wa.me/573112912740')
+
+			+simple-card('/assets/images/440x230/img_Topolino.png', 'Topolino Ratón Pérez ', 'En Topolino Ratón Pérez tenemos productos con todo lo relacionado a la caída de los dientes., nuestro producto insignia son las casitas en madera hechas 100% a mano y personalizadas para que el niño o niña pueda dejarle el diente al ratóncito por la noche y este lo recoja y le deje su recompensa, topolino fue creado para que nuestros niños viva. Esta etapa tan mágica y no se pierda una costumbre tan bella.  ', 'Diana Patricia Mercado ', '3008084398', 'instagram.com/topolinoratonperez', 'https://www.instagram.com/topolinoratonperez', 'topolinoratonperezcolombia@gmail.com ', 'mailto:topolinoratonperezcolombia@gmail.com ', 'https://wa.me/573008084398')
+
+			+simple-card('/assets/images/440x230/img_MediText.png', 'MEDITEXT', 'Venta de productos de rehabilitación física, línea blanda, insumos medicos:kit fonesdoscopio y tensiómetro', 'Angela Jimena Pinto', '3178947065', 'instagram.com/Meditextinsumos', 'https://www.instagram.com/cMeditextinsumos', 'Angelaximena33@gmail.com ', 'mailto:Angelaximena33@gmail.com ', 'https://wa.me/573178947065')
+
+			+simple-card('/assets/images/440x230/img_Danas.png', 'Dana´s', 'Dana´s es una empresa de lencería para bebés, hogar y navidad, que logra ambientar los espacios con diseño y calidad.', 'Daniela Onofre', '3176757405', 'instagram.com/creaciones_dana.s', 'https://www.instagram.com/creaciones_dana.s', 'dani23_o_no@hotmail.com', 'mailto:dani23_o_no@hotmail.com', 'https://wa.me/573176757405')
+
+			+simple-card('/assets/images/440x230/img_Lupino.png', 'Lupino shoes', 'Zapatos y elementos ambientalmente sostenibles ', 'Erika Mejía ', '3204377229', 'instagram.com/lupinoshoes', 'https://www.instagram.com/lupinoshoes', 'Erikapmejia@gmail.com', 'mailto:Erikapmejia@gmail.com', 'https://wa.me/573204377229')
+
+			+simple-card('/assets/images/440x230/img_DeVida.png', 'V de Vida', 'V de Vida es un emprendimiento que nació con el fin de brindar alimentos conscientes  y saludables a todo aquellos que quieran llenarse de amor propio y vida. ', 'Valentina Vanegas ', '3104763351', 'instagram.com/v_de_vidaa', 'https://www.instagram.com/v_de_vidaa', 'Valentinavanegasri@gmail.com', 'mailto:Valentinavanegasri@gmail.com', 'https://wa.me/573104763351')
+
+			+simple-card('/assets/images/440x230/img_Zulima_Gomez.png', 'Zulima Gomez terapias holisiticas', 'Terapias holÍsticas cuerpo /mente/espíritu. Armonía y equilibrio en tu vida,  ángeles, velas, péndulo, esencias florales, etc', 'Diego Andrés Rozo', '3214434117', 'instagram.com/zulimagomez_terapiasholisticas', 'https://www.instagram.com/zulimagomez_terapiasholisticas', 'drozog@unbosque.edu.co', 'mailto:drozog@unbosque.edu.co', 'https://wa.me/573102894603')
+
+			+simple-card('/assets/images/440x230/img_Play_It.png', 'Play It ', 'En esta tienda online encontrarán artículos de colección como jugadores de diferentes deportes y equipos, las premiaciones de cada deporte como trofeos, balones de oro y muchas cosas más! ', 'Laura Camila Velasquez', '3008728251', 'instagram.com/Play_it.col', 'https://www.instagram.com/Play_it.col', 'Lcvelasquez@unbosque.edu.co', 'mailto:Lcvelasquez@unbosque.edu.co', 'https://wa.me/573008728251')
+
+	.clearfix
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+		
+
+
+
+
+
+
+
+
+
+
+
+			
+
+			
+	
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+			
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	
+
+			
+
+
+
+	
+
+			
+
+	

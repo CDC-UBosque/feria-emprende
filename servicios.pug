@@ -1,0 +1,103 @@
+//- .component-name
+//- .component-name--variant
+//- .component-name__sub-object
+//- .component-name__sub-object--variant 
+
+extends pug/page-templates/tpl_archive.pug
+
+block title
+	title Servicios - Feria El Bosque Emprende
+
+block banner
+	section.hero.bg-banner-servicios.pb-5
+		.container-lg
+			.row.pb-5.pt-5.justify-content-center.position-relative.body-hero
+				.col.pt-5.text-center
+					h1.fs-1.text-white Servicios
+
+
+block contenido
+	.container-lg
+		.row.mb-5
+			.col.mt-5.text-center.mb-2
+				.emprende-title.mt-2.mb-2.mb-md-1
+					|Descubre los proyectos emprendedores de <span>servicios</span>
+				.emprende-lead
+					|Únete al networking  y encuentra proveedores y colaboradores
+		.row(data-masonry='{"percentPosition": true }')
+			+simple-card('/assets/images/440x230/img_the_glow_show.png','The Glow Show producciones','Productora cultural enfocada en la creación, produccion y divulgación de cultura y entretenimiento.','Orli Glogower','3203686897','instagram.com/theglowshowproducciones/','https://www.instagram.com/theglowshowproducciones/','produccionglowshow@gmail.com','mailto:produccionglowshow@gmail.com','https://wa.me/573203686897')
+			
+			+simple-card('/assets/images/440x230/no-disponible.png','Psico Arte Blanco','servicios de asesoria, atención en psicología clínica y arte','Yesica Paola Blanco','3208336230','','','yesicablancova@gmail.com','mailto:yesicablancova@gmail.com','https://wa.me/573208336230')
+			
+			+simple-card('/assets/images/440x230/img_Way_of_lifes.png','Way Of Lifes','Somos una empresa que presta servicios de salud mental, de forma online y presencial, cuyo respaldo científico nos permite generar escenarios propicios para las terapias clínicas, trabajo social, psicología educativa, organizacional y jurídica; integrando diferentes posturas epistemológicas, de la mano de un equipo interdisciplinario, que nos permite brindar herramientas para mejorar la calidad de vida de nuestros usuarios. Además, trabajamos bajo los principios bioéticos y de bioseguridad los cuales nos abren la puerta a la innovadora terapia asistida con animales.','Herikan Yuliam Tirado','3212589697','wayoflifes.com/','https://wayoflifes.com/','htirado@unbosque.edu.co','mailto:htirado@unbosque.edu.co','https://wa.me/573212589697')
+			
+			+simple-card('/assets/images/440x230/img_BodyBell.png','BodyBell','BodyBell es una empresa que se dedica a brindar tratamientos en estética no invasiva en Colombia, con el uso de aparatología de ultima generación más desarrollada, garantizando satisfacción y seguridad a los pacientes, siempre comprometidos por querer brindar un estilo de vida saludable. Somos únicos, diferentes y honestos, por el buen servicio y por los valores corporativos que respetamos. Centro de belleza especializado en: Depilación definitiva, Limpieza de piel, Rejuvenecimiento y Tratamientos corporales.','Alba Rocio Pomar','3138701984','instagram.com/bodybell_/','https://www.instagram.com/bodybell_/','pomaralba@unbosque.edu.co','mailto:pomaralba@unbosque.edu.co','https://wa.me/573138701984')
+			
+			+simple-card('/assets/images/440x230/img_Sitio .png','SITIO','Es un café cultural ubicado en el barrio Cedritos. Funciona como un espacio de convergencia que se propone cuestionar las diferentes definiciones de lo cultural y, de esta forma, incentivar el agenciamiento de la comunidad local de productores y productoras de significados culturales y sus interlocutores. Contamos con una agenda semana tras semana que permite visibilizar las expresiones alrededor de lo cultural, con la intención de fortalecer el tejido social del sector.','Oscar Casallas','3204543303','instagram.com/sitio.caos/','https://www.instagram.com/sitio.caos/','oscar.casallasj@gmail.com','mailto:oscar.casallasj@gmail.com','https://wa.me/573204543303')
+			
+			+simple-card('/assets/images/440x230/img_Enlazados.png','Enlazados','Atención psicológica desde el enfoque cognitivo conductual dirigido a estudiantes ','Natalia Botero ','3168271400','enlazadospsicologia.com/','https://www.enlazadospsicologia.com/','natybotero-22@hotmail.com','mailto:natybotero-22@hotmail.com','https://wa.me/573168271400')
+			
+			+simple-card('/assets/images/440x230/img_paol.png','PAOL','Somos una empresa de software especializada para el sector óptico. Contamos con programas para Ópticas, Consultorios, Laboratorios, Mayoristas, Distribuidores y Fabricas para empresas de cualquier tamaño.','Luis Pinilla','3003029359','sistemas-paol.com/','http://www.sistemas-paol.com/','luis.pinilla@sistemas-paol.com','mailto:luis.pinilla@sistemas-paol.com','https://wa.me/573003029359')
+			
+			+simple-card('/assets/images/440x230/img_okiDent.png','OkiDent Odontopediatría Integral','Somos un equipo de especialistas en odontología pediátrica, ubicados en Bogotá, encaminados al manejo integral y preventivo de la salud bucal de los más pequeños dentro de un ambiente agradable para ellos, colmado de calidez, compromiso, respeto y ética profesional. ','Zita Carolina Bendahan Alvarez','3214577512','instagram.com/okidentcolombia/','https://www.instagram.com/okidentcolombia/','zbendahana@unbosque.edu.co','mailto:zbendahana@unbosque.edu.co','https://wa.me/573214577512')
+			
+			+simple-card('/assets/images/440x230/img_Past.png','Proyectos ambientales y salud en el trabajo PAST SAS','Empresa de consultoría en temas HSE y legal ','Jhon Jaime Posada ','3124472115','pastsas.com.co/','https://pastsas.com.co/','gerenciatecnica@pastsas.com.co','mailto:gerenciatecnica@pastsas.com.co','https://wa.me/573124472115')
+			
+			+simple-card('/assets/images/440x230/img_CFG.png','Consultores y Facilitadores de Gestión de Calidad Empresarial','Empresa de consultoría en sistemas de gestión de calidad, seguridad y Salud en el trabajo y ambiente. Basado en las normas ISO y consultoria en habilitación y acreditación en Salud.','Diana Carolina Morales Valenzuela ','12042917266','cfgce.com/','http://www.cfgce.com/','Diana.morales@cfgce.com','mailto:Diana.morales@cfgce.com','https://wa.me/5712042917266')
+			
+			+simple-card('/assets/images/440x230/img_mama_florece_hoy.png','Mamá Florece Hoy','Ayudamos a madres con hijos entre 2 y 7 años de edad a que en 12 semanas transformen su crianza de caótica a respetuosa, armoniosa y eficaz','Ladis Patricia Rodriguez','3106624410','mamaflorece.com/','https://mamaflorece.com/','mamaflorecehoy@gmail.com','mailto:mamaflorecehoy@gmail.com','https://wa.me/573106624410')
+			
+			+simple-card('/assets/images/440x230/img_NovaAmbientti.png','Novambientti Soluciones Ambientales','Empresas dedicada a proveer soluciones en temas de contaminación de suelos y aguas subterráneas, procesos de debida diligencia ambiental, manejo de pasivos ambientales, condiciones ambientales en transacción de predios, eavlaución de riesgos a la salud y el ambiente por exposición a sustancias químicas, proyectos de remediación de sitios contaminados y consultoría ambiental en proyectos de la industria manufacturera, minería y sector de hidrocarburos.','María José Villalobos','+507 65710161','novambientti.com/','https://www.novambientti.com/','mjvillalobos@novambientti.com','mailto:mjvillalobos@novambientti.com','https://wa.me/57+507 65710161')
+			
+			+simple-card('/assets/images/440x230/img_Promo_estetica.png','Promoestetica.com','Plataforma de tratamientos estéticos con centros propios low cost que tiene un propósito: hacer asequible la estética. ','Camilo Fernández ','3203218671','promoestetica.com/','https://www.promoestetica.com/','camifvergara@gmail.com','mailto:camifvergara@gmail.com','https://wa.me/573203218671')
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+			
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	
+
+			
+
+
+
+	
+
+			
+
+	
