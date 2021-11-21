@@ -176,6 +176,10 @@
 .card{
 	&-img{
 		border-bottom:1px solid var(--bs-primary-light);
+		img{
+			max-height: 230px !important;
+			width: 100%;
+		}
 	}
 	&-title{
 		font-size: $size-24;
