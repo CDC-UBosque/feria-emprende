@@ -19,9 +19,15 @@ html(lang="es")
         link(href="/assets/css/style.css", rel="stylesheet")
 
         link(rel='shortcut icon' href='/images/ueb_favicon.ico' type='image/vnd.microsoft.icon')
-        <!--[if IE]>
-            <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
-        <![endif]-->
+        // Global site tag (gtag.js) - Google Analytics
+        script(async src='https://www.googletagmanager.com/gtag/js?id=UA-21086899-19')
+        script.
+          window.dataLayer = window.dataLayer || [];
+          function gtag(){dataLayer.push(arguments);}
+          gtag('js', new Date());
+          
+          gtag('config', 'UA-21086899-19');
+
 
 
 
